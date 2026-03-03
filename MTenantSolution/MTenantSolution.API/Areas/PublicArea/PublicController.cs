@@ -6,7 +6,7 @@ namespace MTenantSolution.API.Areas.PublicArea
 {
     [Area("PublicArea")]
     [DisplayName("Public Controller")]
-    [Route("api/[area/controller]")]
+    [Route("api/[area]/[controller]")]
     [ApiController]
     public class PublicController : ControllerBase
     {
