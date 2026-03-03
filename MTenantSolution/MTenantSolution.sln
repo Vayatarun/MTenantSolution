@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTenantSolution.Model", "MT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTenantSolution.Data", "MTenantSolution.Data\MTenantSolution.Data.csproj", "{96CD7F79-48B7-4260-8DCF-804877732062}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTenantSolution.Services", "MTenantSolution.Services\MTenantSolution.Services.csproj", "{F5E90092-02CB-484E-BE71-9CACA5BB7EB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{96CD7F79-48B7-4260-8DCF-804877732062}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96CD7F79-48B7-4260-8DCF-804877732062}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96CD7F79-48B7-4260-8DCF-804877732062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E90092-02CB-484E-BE71-9CACA5BB7EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E90092-02CB-484E-BE71-9CACA5BB7EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E90092-02CB-484E-BE71-9CACA5BB7EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E90092-02CB-484E-BE71-9CACA5BB7EB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

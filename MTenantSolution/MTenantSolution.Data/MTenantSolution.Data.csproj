@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MTenantSolution.Model\MTenantSolution.Model.csproj" />
+  </ItemGroup>
+
 </Project>

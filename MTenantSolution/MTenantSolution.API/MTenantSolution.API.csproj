@@ -21,4 +21,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MTenantSolution.Services\MTenantSolution.Services.csproj" />
+  </ItemGroup>
+
 </Project>
