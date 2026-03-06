@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MTenantSolution.API.Areas.Identity.Data;
+using MTenantSolution.Model.IdentityModel;
 
-namespace MTenantSolution.API.Areas.Identity.Data;
+namespace MTenantSolution.Data.Areas.Identity.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
