@@ -1,23 +1,81 @@
-﻿@inherits LayoutComponentBase
+﻿@using MTenantSolution.BlazorApp.Service
+@inherits LayoutComponentBase
+@inject IJSRuntime jsRuntime
+@inject TokenStore tokenStore
 
-<div class="page">
-    <div class="sidebar">
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar>
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        CRM Application
+        <MudSpacer />
+        <CultureDropDown />
+        <MudIconButton Icon="@_currentIcon" Color="Color.Inherit" Edge="Edge.End" OnClick="UpdateDarkMode" />
+    </MudAppBar>
+    <MudDrawer @bind-Open="@_drawerOpen">
         <NavMenu />
-    </div>
+    </MudDrawer>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+@code {
+    bool _isInitialized = false;
+    bool _drawerOpen = true;
+    bool _isDarkMode = false;
+    string _currentIcon = Icons.Material.Filled.Brightness7;
+    MudTheme _theme = new MudTheme()
+    {
+        PaletteLight = new PaletteLight()
+        {
+            Primary = Colors.DeepPurple.Default,
+            Secondary = Colors.Blue.Darken3,
+            AppbarBackground = Colors.DeepPurple.Default,
+        },
+        PaletteDark = new PaletteDark()
+        {
+            Primary = Colors.DeepPurple.Lighten2,
+            Secondary = Colors.Blue.Lighten2,
+            AppbarBackground = Colors.DeepPurple.Lighten2,
+        }
+    };
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_isInitialized)
+        {
+            _isInitialized = true;
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+            if (!tokenStore.IsInitialized)
+            {
+                await tokenStore.LoadFromStorageAsync(jsRuntime);
+                LogsEnricher.CurrentUserEmail = tokenStore.GetEmailFromAccessToken();
+            }
 
-<div id="blazor-error-ui" data-nosnippet>
-    An unhandled error has occurred.
-    <a href="." class="reload">Reload</a>
-    <span class="dismiss">🗙</span>
-</div>
+            var darkMode = await jsRuntime.InvokeAsync<string>("localStorage.getItem", "dark-mode");
+            if (!string.IsNullOrEmpty(darkMode))
+            {
+                _isDarkMode = bool.Parse(darkMode);
+                _currentIcon = _isDarkMode ? Icons.Material.Filled.Brightness4 : Icons.Material.Filled.Brightness7;
+                StateHasChanged();
+            }
+            await jsRuntime.InvokeVoidAsync("eval", "document.body.style.visibility = 'visible';");
+        }
+    }
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private async Task UpdateDarkMode()
+    {
+        _isDarkMode = !_isDarkMode;
+        _currentIcon = _isDarkMode ? Icons.Material.Filled.Brightness4 : Icons.Material.Filled.Brightness7;
+        await jsRuntime.InvokeVoidAsync("localStorage.setItem", "dark-mode", _isDarkMode.ToString());
+    }
+}

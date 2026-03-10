@@ -1,6 +1,0 @@
-@MTenantSolution.API_HostAddress = http://localhost:5207
-
-GET {{MTenantSolution.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
