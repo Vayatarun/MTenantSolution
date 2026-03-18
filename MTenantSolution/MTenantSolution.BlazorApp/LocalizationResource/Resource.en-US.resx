@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="button-login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="button-reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="input-email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="input-password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="label-errors" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="message-email-format" xml:space="preserve">
+    <value>Email format is not correct.</value>
+  </data>
+  <data name="message-email-required" xml:space="preserve">
+    <value>Email is required!</value>
+  </data>
+  <data name="message-invalid-login" xml:space="preserve">
+    <value>Invalid login attempt.</value>
+  </data>
+  <data name="message-login-not-allowed" xml:space="preserve">
+    <value>Login is not allowed.</value>
+  </data>
+  <data name="message-password-validation" xml:space="preserve">
+    <value>Password must contain at least 8 characters, one uppercase letter, one number and one symbol.</value>
+  </data>
+  <data name="message-password-required" xml:space="preserve">
+    <value>Password is required!</value>
+  </data>
+  <data name="message-two-factor-required" xml:space="preserve">
+    <value>Two-factor authentication is required!</value>
+  </data>
+  <data name="message-unknown-error" xml:space="preserve">
+    <value>An unknown error occurred during the request.</value>
+  </data>
+  <data name="message-user-locked-out" xml:space="preserve">
+    <value>User is locked out.</value>
+  </data>
+  <data name="title-login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Hello, welcome to our CRM</value>
+  </data>
+  <data name="title-register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="input-firstname" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="message-firstname-required" xml:space="preserve">
+    <value>First name is required!</value>
+  </data>
+  <data name="input-lastname" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="message-lastname-required" xml:space="preserve">
+    <value>Last name is required!</value>
+  </data>
+  <data name="input-date-of-birth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="label-date-of-birth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="input-confirm-password" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="message-confirm-password-required" xml:space="preserve">
+    <value>Confirm password is required!</value>
+  </data>
+  <data name="button-register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="message-confirm-password-match" xml:space="preserve">
+    <value>Passwords do not match.</value>
+  </data>
+  <data name="message-email-exists" xml:space="preserve">
+    <value>Email already exists.</value>
+  </data>
+  <data name="message-password-weak" xml:space="preserve">
+    <value>Password is too weak.</value>
+  </data>
+  <data name="message-invalid-user-data" xml:space="preserve">
+    <value>Invalid user data.</value>
+  </data>
+  <data name="input-gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="gender-Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="gender-Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="gender-Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="title-confirm-email" xml:space="preserve">
+    <value>Confirm Email</value>
+  </data>
+  <data name="message-user-not-found" xml:space="preserve">
+    <value>User not found!</value>
+  </data>
+  <data name="input-verification-code" xml:space="preserve">
+    <value>Verification code</value>
+  </data>
+  <data name="message-code-four-digit" xml:space="preserve">
+    <value>Code must contain exactly 4 digits.</value>
+  </data>
+  <data name="message-verification-code-required" xml:space="preserve">
+    <value>Verification code is required!</value>
+  </data>
+  <data name="info-verify-code-sent" xml:space="preserve">
+    <value>The verification code has been sent to your email, please take that code and enter it in the box without closing this page.</value>
+  </data>
+  <data name="button-activate" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="button-verify" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="message-invalid-confirmation-code" xml:space="preserve">
+    <value>Invalid code!</value>
+  </data>
+  <data name="link-confirm-email" xml:space="preserve">
+    <value>Confirm Email</value>
+  </data>
+  <data name="link-forget-password" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="message-failed-save-verification-code" xml:space="preserve">
+    <value>Failed to save verification code.</value>
+  </data>
+  <data name="message-email-confirmation-failed" xml:space="preserve">
+    <value>Email confirmation failed!</value>
+  </data>
+  <data name="message-email-already-confirmed" xml:space="preserve">
+    <value>Email already confirmed!</value>
+  </data>
+  <data name="email-template-confirm-email-raw-text" xml:space="preserve">
+    <value>Dear {FullName}, Please Verify Your Email Address by this 4-digit code: {Code}.</value>
+  </data>
+  <data name="button-forget-password" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="button-change-password" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="email-template-forgot-password-raw-text" xml:space="preserve">
+    <value>Dear {FullName}, To reset your password, please use the following 4-digit code: {Code}.</value>
+  </data>
+  <data name="message-password-change-failed" xml:space="preserve">
+    <value>Password change failed.</value>
+  </data>
+  <data name="title-forgot-password" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="message-unable-reset-password" xml:space="preserve">
+    <value>Unable to reset password</value>
+  </data>
+  <data name="button-reset-password" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="button-update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="title-user-profile" xml:space="preserve">
+    <value>User Profile</value>
+  </data>
+  <data name="tab-details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="tab-edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="tab-change-password" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="input-current-password" xml:space="preserve">
+    <value>Current Password</value>
+  </data>
+  <data name="label-full-name" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="label-date-of-register" xml:space="preserve">
+    <value>Date of register</value>
+  </data>
+  <data name="label-status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="status-active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="status-inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="label-description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="message-profile-updated-successfully" xml:space="preserve">
+    <value>Profile updated successfully!</value>
+  </data>
+  <data name="message-password-changed-successfully" xml:space="preserve">
+    <value>Password changed successfully!</value>
+  </data>
+  <data name="message-user-is-inactive" xml:space="preserve">
+    <value>Account inactive. To reactivate your account, please contact the support team.</value>
+  </data>
+  <data name="profile-description" xml:space="preserve">
+    <value>Profile Description</value>
+  </data>
+  <data name="message-login-again-auth-error" xml:space="preserve">
+    <value>Something went wrong with your current session. Please log in again.</value>
+  </data>
+  <data name="menu-home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="menu-user-profile" xml:space="preserve">
+    <value>User Profile</value>
+  </data>
+  <data name="menu-logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="menu-login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="menu-register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="menu-about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="message-internal-server-error" xml:space="preserve">
+    <value>An internal server error occurred.</value>
+  </data>
+  <data name="message-invalid-token" xml:space="preserve">
+    <value>Invalid token!</value>
+  </data>
+  <data name="message-invalid-refresh-token" xml:space="preserve">
+    <value>Invalid refresh token!</value>
+  </data>
+  <data name="message-refresh-token-limit-exceeded" xml:space="preserve">
+    <value>Refresh token limit exceeded!</value>
+  </data>
+  <data name="message-failed-user-update" xml:space="preserve">
+    <value>Failed to update user!</value>
+  </data>
+</root>

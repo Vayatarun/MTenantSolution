@@ -1,0 +1,11 @@
+﻿@page "/"
+@using System.Globalization
+
+@if (CultureInfo.CurrentUICulture.Name == "nl-NL")
+{
+    <Home_nl />
+}
+else
+{
+    <Home_en />
+}
